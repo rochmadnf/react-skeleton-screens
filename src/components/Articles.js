@@ -9,7 +9,7 @@ const Articles = () => {
       const res = await fetch('https://jsonplaceholder.typicode.com/posts').then((response) => response.json());
       setArticles(res);
     }, 5000);
-  })
+  });
 
   return (
     <div className='articles'>
@@ -22,7 +22,7 @@ const Articles = () => {
           </div>
         ))
       }
-      {!articles && [1, 2, 3, 4, 5].map((n) => <SkeletonArticle key={n} theme="dark" />)}
+      {!articles && [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => <SkeletonArticle key={n} theme="dark" />)}
     </div>
   )
 }
