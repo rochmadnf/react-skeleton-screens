@@ -23,7 +23,7 @@ const User = () => {
         )
       }
 
-      {!profile && <SkeletonProfile />}
+      {!profile && <SkeletonProfile theme={`dark`} />}
     </div>
   );
 }
