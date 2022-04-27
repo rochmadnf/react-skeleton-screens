@@ -37,3 +37,16 @@ h2 {
   grid-template-columns: 2fr 1fr;
   gap: 100px;
 }
+
+.profile-wrapper {
+  margin: 20px auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 30px;
+}

@@ -15,10 +15,17 @@ const User = () => {
       <h2>User Detail</h2>
       {
         profile && (
-          <div className="profile">
-            <h3>{profile.username}</h3>
-            <p>{profile.email}</p>
-            <a href={profile.website}>{profile.website}</a>
+          <div className="profile-wrapper">
+            <div className="profile">
+              <div>
+                <img src={`https://ui-avatars.com/api/?name=${profile.name}&rounded=true&size=96`} alt="" />
+              </div>
+              <div>
+                <h3>{profile.name}</h3>
+                <p>{profile.email}</p>
+                <a href={profile.website}>{profile.website}</a>
+              </div>
+            </div>
           </div>
         )
       }
